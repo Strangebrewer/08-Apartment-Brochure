@@ -103,7 +103,3 @@ $('.gallery-thumbs').magnificPopup({
   gallery: { enabled: true }
   // other options
 });
-
-$("#form-submit-btn").on("click", function (event) {
-  event.preventDefault();
-})
