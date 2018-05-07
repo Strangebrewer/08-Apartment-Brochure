@@ -1,3 +1,5 @@
+/* CSS variables make changing the color scheme easy */
+
 :root {
   --mainColor: #007c85;
   --mainText: #ececec;
@@ -8,6 +10,8 @@
   --btnHover: #0b4a52;
   --hoverBorder: #000;
 }
+
+/* general page styling */
 
 html {
   box-sizing: border-box;
@@ -55,6 +59,8 @@ h5 {
   line-height: 1.2;
   margin-top: 20px;
 }
+
+/* header styling */
 
 header {
   background: var(--mainColor);
@@ -176,7 +182,6 @@ header {
 
 .menu ul:first-child {
   border-top: 1px solid var(--mainText);
-  /* border-bottom: 1px solid var(--mainText); */
 }
 
 .menu ul a {
@@ -189,6 +194,8 @@ header {
 }
 
 /* end hamburger menu styling */
+
+/* main content styling */
 
 .main-content {
   flex: 1 0 auto;
@@ -222,6 +229,8 @@ header {
   opacity: 1;
   transform: translateY(3px);
 }
+
+/* weather API results styling */
 
 #weather-display {
   font-size: .9em;
@@ -276,6 +285,8 @@ header {
   text-decoration: underline;
 }
 
+/* individual section styling */
+
 .narrative {
   text-align: center;
   width: 840px;
@@ -287,6 +298,8 @@ header {
   font-weight: lighter;
   line-height: 1.3;
 }
+
+/* carousel styling */
 
 .slider-wrapper {
   margin: auto;
@@ -539,6 +552,8 @@ input[type="submit"]:hover {
   background-color: var(--hoverBkgrd);
 }
 
+/* footer styling */
+
 .media-links img {
   margin: 10px;
   height: 32px;
@@ -565,6 +580,8 @@ footer {
   text-align: center;
   color: var(--mainText);
 }
+
+/* media queries */
 
 @media (max-width: 950px) {
   #weather-display {

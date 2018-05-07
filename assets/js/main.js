@@ -9,6 +9,7 @@ $('.autoplay').slick({
   appendDots: $(".slider-wrapper")
 });
 
+// function to convert wind direction from degrees to cardinal direction
 function degreesToCardinal(deg) {
   const cardinalArray = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
   var cardinal = Math.floor(((deg + 11.25) % 360) / 22.5);
@@ -17,6 +18,7 @@ function degreesToCardinal(deg) {
 
 getWeather();
 
+// checking the weather every ten minutes is more than sufficient and ensures that requests stay well under the API's rate limit
 setInterval(getWeather, 1000 * 600);
 
 function getWeather() {
@@ -93,7 +95,6 @@ $('.floorplan-thumbs').magnificPopup({
   type: 'image',
   gallery: { enabled: true },
   titleSrc: 'title'
-  // other options
 });
 
 //  Gallery toggle - magnific.js
@@ -101,5 +102,4 @@ $('.gallery-thumbs').magnificPopup({
   delegate: 'a',
   type: 'image',
   gallery: { enabled: true }
-  // other options
 });

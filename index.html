@@ -15,8 +15,11 @@
 
 </head>
 
+<!-- id in body for scrolling links -->
+
 <body id="home">
 
+  <!-- header with nav links -->
   <header>
     <div class="header">
       <p class="header-name">
@@ -35,6 +38,8 @@
       </nav>
     </div>
   </header>
+
+  <!-- nav for hamburger menu dropdown -->
   <nav>
     <div class="menu" id="menu">
       <ul>
@@ -63,6 +68,7 @@
     </div>
   </nav>
 
+  <!-- main content div -->
   <div class="main-content">
 
     <div class="btn-arr-top">
@@ -70,8 +76,10 @@
       <button class="btn-top btn-top-two">Submit A Service Request</button>
     </div>
 
+    <!-- emtpy div to contain weather AJAX request results -->
     <div id="weather-display"></div>
 
+    <!-- using sections as a first foray into using semantic html -->
     <section id="welcome" class="welcome">
       <div class="narrative">
         <h4>Some people don't think it be like it is, but it do.</h4>
@@ -91,6 +99,7 @@
           tempora neque quae molestiae totam itaque, nostrum, veniam error saepe quia mollitia omnis libero!</p>
       </div>
 
+      <!-- Slick.js carousel. Caoursels are apparently overused and kind of an eye-roller anymore, but still was interesting to learn -->
       <div class="slider-wrapper">
         <div class="carousel autoplay center">
           <div>
@@ -138,10 +147,10 @@
 
         <h3 class="floorplan-choice">Choose from Three Floor Plans:</h3>
 
+        <!-- Popup floorplan images. I used Magnific-popup so I don't have to incorporate (and then have to overwrite) Bootstrap -->
         <div class="floorplan-thumbs">
           <a href="assets/images/floorplan-one.png" title="large two-bedroom">
             <img src="assets/images/floorplan-one.png" alt="">
-
           </a>
           <a href="assets/images/floorplan-two.jpg" title="smaller two-bedroom">
             <img src="assets/images/floorplan-two.jpg" alt="">
@@ -243,6 +252,8 @@
           consectetur adipisicing elit. Voluptatum expedita laboriosam suscipit. In, vel quas labore rerum culpa quis corporis
           obcaecati itaque corrupti blanditiis excepturi incidunt. Repellat dignissimos soluta magnam!
         </p>
+
+        <!-- Magnific-popup for a thumbnail/popup gallery -->
         <div class="gallery-thumbs">
           <a href="assets/images/bathroom-one.jpg">
             <img src="assets/images/bathroom-one.jpg" alt="">
@@ -384,17 +395,18 @@
         <h3>FOR MORE INFORMATION OR TO SCHEDULE AN APPOINTMENT, FILL OUT THE
           <span class="color-header">CONTACT FORM</span> BELOW</h3>
 
+        <!-- the "action" attribute would need to be modified to fit whatever contact method is used
+             This form appears to work after much tinkering and experimenting, but I have very little experience with PHP -->
         <form name="contactform" method="post" action="send_form_email.php">
           <label for="name-input">Name:</label>
           <input class="input" type="text" name="name-input" placeholder="ex. John Smith">
           <label for="email-input">Email:</label>
           <input class="input" type="email" name="email-input" placeholder="ex. emailaddress@example.com">
-          <label for="phone-input">Phone:</label>
-          <input class="input" type="text" name="phone-input" placeholder="ex. 954-555-1212">
+          <label for="subject-input">Subject:</label>
+          <input class="input" type="email" name="subject-input" placeholder="ex. emailaddress@example.com">
           <label for="message-input">Message:</label>
           <textarea type="text" name="message-input" placeholder="Type your message here..."></textarea>
           <input type="submit" id="form-submit-btn" value="Submit">
-          <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
         </form>
 
         <h5>
