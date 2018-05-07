@@ -25,7 +25,7 @@ This project came about when I noticed that my apartment complex does not have a
 ### 3-Challenges
 No real challenges, other than taking the time to do it. Using new libraries (Slick.js and Magnific-Popup) is always a learning experience, but their documentation is good, so no real difficulties there.
 
-### 4-Contributors :raised_hands:
+### 4-Contributors
 - [Keith Allmon](https://github.com/Strangebrewer/)
 
 If you would like to contribute please contact Keith Allmon on GitHub or at BKAShambala@gmail.com. I welcome both first time contributors and experienced developers with critical feedback.
