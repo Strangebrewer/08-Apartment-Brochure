@@ -1,11 +1,11 @@
 # 08-Apartment-Brochure
   
-## :mag: Table of contents :mag:
+## Table of contents
   
-### [1-Description](https://github.com/Strangebrewer/RepoName#Description)
-### [2-Technologies](https://github.com/Strangebrewer/RepoName#Technologies)
-### [3-Challenges](https://github.com/Strangebrewer/RepoName#Challenges)
-### [4-Contributors](https://github.com/Strangebrewer/RepoName#Contributors)
+### 1-Description
+### 2-Technologies
+### 3-Challenges
+### 4-Contributors
 
 ### 1-Description
 This project came about when I noticed that my apartment complex does not have a website. I didn't really have any intention of building it for *them*, although I may offer it to them anyway. But I decided to build a polished "brochure" type website just for the experience.
